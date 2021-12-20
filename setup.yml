@@ -1,0 +1,16 @@
+---
+- hosts: all
+  become: true
+
+  handlers:
+    - import_tasks: handlers/main.yml
+
+  vars_files:
+    - 'defaults/main.yml'
+    - 'vars/main.yml'
+    
+  tasks:
+    - name: Delegate to main installation
+      include_tasks: tasks/main.yml
+      
+
