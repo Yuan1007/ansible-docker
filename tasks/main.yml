@@ -24,3 +24,17 @@
     line: "ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2376 --containerd=/run/containerd/containerd.sock"
     state: present
   notify: Restart Docker
+
+# - name: Docker ==> Close 2376 port
+#   lineinfile:
+#     dest: /lib/systemd/system/docker.service
+#     regexp: '^ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2376 --containerd=/run/containerd/containerd.sock$'
+#     line: "ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock"
+#     state: present
+#   notify: Restart Docker
+
+- name: Docker ==> Copy daemon.json
+  copy:
+    src:  "files/daemon.json"
+    dest: "/etc/docker/daemon.json"
+  notify: Restart Docker
