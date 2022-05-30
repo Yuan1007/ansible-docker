@@ -1,30 +1,10 @@
 [all:vars]
-ansible_ssh_user = ubuntu
 ansible_python_interpreter=/usr/bin/python3
+ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
 
-[develop]
-20.68.127.117
+[hosts]
+13.65.7.169
+#20.228.185.168
+#8.134.106.81
 
-#20.216.18.69
-#20.216.18.80
-#20.216.18.86
-
-#40.83.100.249
-#10.1.168.16
-#10.1.168.26
-
-#10.1.168.17
-#10.1.168.18
-#10.1.168.19
-#10.1.168.20
-
-# 10.1.168.1 ansible_set_hostname=swarm-1 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795 
-# 10.1.168.2 ansible_set_hostname=swarm-2 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.168.3 ansible_set_hostname=swarm-3 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.168.4 ansible_set_hostname=swarm-4 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.168.5 ansible_set_hostname=swarm-5 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.168.6 ansible_set_hostname=swarm-6 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.168.7 ansible_set_hostname=swarm-7 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.168.8 ansible_set_hostname=swarm-8 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.168.9 ansible_set_hostname=swarm-9 ansible_ssh_pass=26597795 ansible_sudo_pass=26597795
-# 10.1.169.189
+#54.238.179.246 maintainers='["ubuntu", "scott", "ching", "jinga"]'

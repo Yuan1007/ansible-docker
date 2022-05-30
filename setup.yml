@@ -1,16 +1,12 @@
----
+   
 - hosts: all
-  become: true
-
+  become: True
+  roles:
+    - maintainer-users
   handlers:
-    - import_tasks: handlers/main.yml
-
+    - include: 'handlers/main.yml'
   vars_files:
     - 'defaults/main.yml'
     - 'vars/main.yml'
-    
   tasks:
-    - name: Delegate to main installation
-      include_tasks: tasks/main.yml
-      
-
+    - include: 'tasks/main.yml'
