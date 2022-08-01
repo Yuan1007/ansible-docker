@@ -3,8 +3,23 @@ ansible_python_interpreter=/usr/bin/python3
 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
 
 [hosts]
-13.65.7.169
-#20.228.185.168
-#8.134.106.81
+#10.90.200.17
+#15.185.211.46 ansible_set_hostname=1029-api
+#20.225.181.123 ansible_set_hostname=1000-api
+#20.111.40.110 ansible_set_hostname=1013-api
+#103.27.62.175 ansible_set_hostname=Vietnam-Maintain
+#195.80.149.15 ansible_set_hostname=Phnom-Maintain
+#20.119.62.175 ansible_set_hostname=1001-api
+#20.127.89.249 ansible_set_hostname=1001-api-2
+#10.90.200.18 ansible_set_hostname=90-200-18-db
+#8.212.178.130 ansible_set_hostname=Manila-Maintain
+#54.163.86.226 ansible_set_hostname=Virginia-Maintain
+#175.41.191.0 ansible_set_hostname=Singapore-Maintain
+#43.133.109.77 ansible_set_hostname=Bangkok-Maintain
+#18.179.66.40 ansible_set_hostname=Tokyo-Maintain
+#1.116.249.67 ansible_set_hostname=Shanghai-Maintain
+#139.155.238.49 ansible_set_hostname=Chengdu-Maintain
+#82.157.169.7 ansible_set_hostname=Beijing-Maintain
+#106.52.31.205 ansible_set_hostname=Guangzhou-Maintain
+#101.32.77.66 ansible_set_hostname=Honkong-Maintain
 
-#54.238.179.246 maintainers='["ubuntu", "scott", "ching", "jinga"]'

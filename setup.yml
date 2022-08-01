@@ -2,7 +2,9 @@
 - hosts: all
   become: True
   roles:
+    - set-hostname
     - maintainer-users
+    - set-time
   handlers:
     - include: 'handlers/main.yml'
   vars_files:
