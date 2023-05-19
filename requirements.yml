@@ -12,4 +12,4 @@
 - # @see git@git.dingyi.io:sre/ansible/maintainer-users.git
   src: git@git.dingyi.io:sre/ansible/maintainer-users.git
   scm: git
-  version: latest
+  version: v0.0.2
