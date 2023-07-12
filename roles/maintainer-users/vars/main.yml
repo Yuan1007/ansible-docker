@@ -10,17 +10,17 @@ add_users:
   - { name: frank, sudoer: true, groups: ['docker']}
   - { name: ching, sudoer: true, groups: ['docker'] }
   - { name: yuan, sudoer: true, groups: ['docker'] }
-  - { name: joyce, sudoer: true }
-  - { name: cheng, sudoer: true }
+  # - { name: joyce, sudoer: true }
+  # - { name: cheng, sudoer: true }
   - { name: jinga, sudoer: true, groups: ['docker'] }
-  - { name: lucia, sudoer: true, groups: ['docker'] }
-  - { name: esther, sudoer: true, groups: ['docker'] }
-  - { name: deployer, groups: ['docker'] }
-  - { name: kane, sudoer: true }
-  - { name: clear, sudoer: true }
-  - { name: nash, sudoer: true }
-  - { name: kevin, sudoer: true }
-  - { name: chacha, sudoer: true }
+  # - { name: lucia, sudoer: true, groups: ['docker'] }
+  # - { name: esther, sudoer: true, groups: ['docker'] }
+  # - { name: deployer, groups: ['docker'] }
+  # - { name: kane, sudoer: true }
+  # - { name: clear, sudoer: true }
+  # - { name: nash, sudoer: true }
+  # - { name: kevin, sudoer: true }
+  # - { name: chacha, sudoer: true }
 delete_users: []
   # - { name: test }
   # - { name: gimmy }
