@@ -4,4 +4,3 @@ ansible_python_interpreter=/usr/bin/python3
 ansible_ssh_extra_args='-o StrictHostKeyChecking=no'
 
 [hosts]
-10.1.169.6
